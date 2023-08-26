@@ -20,6 +20,7 @@ class CommentService
 
         if ($post == null) {
             $message['post']['notfound'] = 'Post is not found';
+            return $message;
         }
 
         $comment = Comment::create([

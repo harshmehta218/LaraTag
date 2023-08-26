@@ -111,6 +111,11 @@
 						"key": "Authorization",
 						"value": "Bearer 1|laravel_sanctum_DWIJrmbeQYyiuhLU51nXlNmmNlqgo9WGvpwcXOjI4b68e9a1",
 						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -118,13 +123,15 @@
 					"formdata": [
 						{
 							"key": "post_id",
-							"value": "1",
-							"type": "text"
+							"value": "1000",
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "comment",
 							"value": "sadfsafasdf",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -154,12 +161,14 @@
 						{
 							"key": "tag_name",
 							"value": "sdsafdsafd",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						},
 						{
 							"key": "post_id",
 							"value": "1",
-							"type": "text"
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},

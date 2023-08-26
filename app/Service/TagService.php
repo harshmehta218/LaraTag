@@ -21,6 +21,7 @@ class TagService
 
         if ($post == null) {
             $message['post']['notfound'] = 'Post is not found';
+            return $message;
         }
 
         $createTag = Tag::create([

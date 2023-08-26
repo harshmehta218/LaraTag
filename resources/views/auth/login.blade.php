@@ -25,10 +25,18 @@
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                @if ($errors->has('email'))
+                    <span class="invalid feedback" style='color: red'
+                        role="alert">{{ $errors->first('email') }}</span>
+                @endif
             </div>
             <div class="form-group">
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+                @if ($errors->has('password'))
+                    <span class="invalid feedback" style='color: red'
+                        role="alert">{{ $errors->first('password') }}</span>
+                @endif
             </div>
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
